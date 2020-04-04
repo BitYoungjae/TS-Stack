@@ -1,0 +1,28 @@
+const { Stack } = require('./build/Stack');
+
+test('Push/Pop Test', () => {
+  const stack = new Stack(10);
+  stack.push(5);
+  stack.push(4);
+  stack.push(3);
+
+  const lastOne = stack.pop();
+  const { size } = stack;
+
+  expect(lastOne).toBe(3);
+  expect(size).toBe(2);
+});
+
+test('Stack Overflow Test', () => {
+  const stack = new Stack(2);
+  stack.push(5);
+  stack.push(4);
+
+  expect(() => stack.push(3)).toThrow();
+});
+
+test('New Stack with 0 size', () => {
+  expect(() => {
+    const stack = new Stack(0);
+  }).toThrow();
+});

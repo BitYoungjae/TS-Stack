@@ -1,0 +1,20 @@
+{
+  "name": "ts-stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./build/Stack.js",
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "jest": "^25.2.7",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "start:build": "tsc",
+    "start:test": "jest",
+    "start": "concurrently npm:start:*"
+  },
+  "keywords": [],
+  "author": "bityoungjae@gmail.com",
+  "license": "ISC"
+}
