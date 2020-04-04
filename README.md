@@ -2,6 +2,22 @@
 
 타입스크립트와 TypedArray로 구현한 스택
 
+## Interface
+
+```typescript
+export declare class Stack {
+  private data;
+  private internalSize;
+  constructor(size: number);
+  get size(): number;
+  push(value: number): void;
+  pop(): number;
+  clear(): void;
+  get top(): number;
+  get isEmpty(): boolean;
+}
+```
+
 ## API
 
 ```js
