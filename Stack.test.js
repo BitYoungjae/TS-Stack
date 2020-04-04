@@ -7,11 +7,8 @@ describe('Core Tests', () => {
     stack.push(4);
     stack.push(3);
 
-    const lastOne = stack.pop();
-    const { size } = stack;
-
-    expect(lastOne).toBe(3);
-    expect(size).toBe(2);
+    expect(stack.pop()).toBe(3);
+    expect(stack.size).toBe(2);
   });
 
   it('Stack Overflow Test', () => {
