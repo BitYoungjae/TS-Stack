@@ -32,4 +32,19 @@ export class Stack {
 
     return value;
   }
+
+  public clear(): void {
+    this.internalSize = 0;
+  }
+
+  public get top(): number {
+    if (this.size === 0) return -1;
+
+    return this.data[this.size - 1];
+  }
+
+  public get isEmpty(): boolean {
+    if (this.size === 0) return true;
+    return false;
+  }
 }
