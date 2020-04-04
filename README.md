@@ -17,7 +17,7 @@ console.log(stack.pop()); // 4
 console.log(stack.pop()); // 5
 ```
 
-### Scripts
+## Scripts
 
 ```bash
 npm run start:build
