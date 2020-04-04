@@ -18,7 +18,7 @@ export declare class Stack {
 }
 ```
 
-## API
+## Demo
 
 ```js
 const { Stack } = require('./build/Stack');
