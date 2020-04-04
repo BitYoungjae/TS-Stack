@@ -57,5 +57,8 @@ describe('New Features', () => {
 
   it('top', () => {
     expect(stack.top).toBe(3);
+
+    stack.clear();
+    expect(stack.top).toBe(-1);
   });
 });
